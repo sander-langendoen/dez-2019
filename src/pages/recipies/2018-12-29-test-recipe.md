@@ -1,5 +1,5 @@
 ---
-templateKey: recipies-post
+templateKey: blog-post
 title: Test recipe
 date: 2018-12-29T18:45:23.667Z
 description: Dit is een test
