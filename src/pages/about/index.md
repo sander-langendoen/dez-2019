@@ -1,19 +1,13 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: Over mij
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+## Opleiding en visie
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Ik ben Eline Zuiderwijk, diëtist. Ik ben in 2011 afgestudeerd aan de Haagse Hogeschool voor de 4 jarige opleiding Voeding en Dietetiek. Na mijn opleiding ben ik gaan werken bij een afslankinstituut. Daar heb ik veel ervaring op gedaan met het coachen en begeleiden van cliënten, zowel wat betreft gezonde voeding als een goed beweegpatroon. Na 2 jaar besloot ik om een praktijk vanuit huis te starten, en anno 2013 was dit een feit. Vanaf juni 2014 opende ik ook een praktijk in Dordrecht. Mijn huidige praktijk in Leidschendam-Voorburg zit in het gezondheidscentrum aan de Overgoo 1 te Leidschendam.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Met heel veel plezier help ik mensen zowel in Leidschendam-Voorburg als in Dordrecht om hun voedingspatroon zo optimaal mogelijk te krijgen.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Iedereen is welkom, of men nu wil afvallen, aankomen of gewoon eens wil weten of wat hij/zij momenteel doet nu wel zo gezond is! Ook mensen met een medische indicatie zijn natuurlijk welkom, bv. bij overgewicht, bij een te hoog cholesterol, een te hoge bloeddruk en diabetes.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Mijn visie over een gezonde leefstijl is als volgt: zorgen voor zoveel mogelijk pure voeding, zonder al teveel toevoegingen zoals suiker/zout en e-nummers. Koken zonder pakjes en zakjes. Een voedingspatroon rijk aan goede voedingsstoffen, zodat je nog steeds heerlijk kan eten en bovenal zonder een hongergevoel!
