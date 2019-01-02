@@ -7,8 +7,9 @@ const Header = () => (
 
 	return(
 
-		<Navbar/>
-
+		<header>
+			<Navbar/>
+		</header>
 	)
 
 )
