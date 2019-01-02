@@ -9,8 +9,10 @@ const Header = class extends React.Component {
 		return (
 
 			<header>
-				<Logo />
-				<Navbar/>
+				<div className="container">
+					<Logo />
+					<Navbar/>
+				</div>
 			</header>
 		)
 	}
