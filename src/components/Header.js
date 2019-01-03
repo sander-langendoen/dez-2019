@@ -8,22 +8,16 @@ const Header = class extends React.Component {
 
 	render() {
 
-		const Container = styled.container`
-		  	max-width: 960px;
-			margin: 0 auto;
-			display: flex;
-		`;
-
 		return (
 
 			<header>
 
-				<Container>
+				<div className="container">
 			
 					<Logo />
 					<Navbar/>
 			
-				</Container>
+				</div>
 			
 			</header>
 		)
