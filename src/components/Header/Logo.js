@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logo-dietist-eline-zuiderwijk.jpg'
+import logo from '../../img/logo-dietist-eline-zuiderwijk.jpg'
 
 
 const Logo = class extends React.Component {
