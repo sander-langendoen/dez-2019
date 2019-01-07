@@ -9,7 +9,9 @@ const Logo = class extends React.Component {
 
 	        <div className="HeaderLogo" title="Logo">
 	       		
-	       		<img src={logo} alt="Logo Dietist Eline Zuiderwijk" />
+	       		<a href="/" title="Link naar homepage">
+		       		<img src={logo} alt="Logo Dietist Eline Zuiderwijk" />
+		       	</a>
 
 	        </div>
 

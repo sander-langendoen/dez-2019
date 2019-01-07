@@ -6,9 +6,9 @@ const Colophon = class extends React.Component {
  	render() {
         return (
 
-	        <div className="Colophon">
+	        <div className="colophon">
 				<span>&#169; /*  echo date("Y"); Eline Zuiderwijk | */ </span>
-				<a href="http://kleefaan.nl/" rel="WordPress designer en websitebouwer" title="WordPress websitebouwer">Kleefaan.nl</a>' ); ?>
+				<a href="http://kleefaan.nl/" rel="WordPress designer en websitebouwer" title="WordPress websitebouwer">Kleefaan.nl</a> 
 			</div>
 
 		)
