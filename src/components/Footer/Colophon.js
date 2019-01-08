@@ -18,7 +18,7 @@ const Colophon = class extends React.Component {
         return (
 
 	        <div className="colophon">
-				<span id="colophonDate">&#169; {this.state.date} Eline Zuiderwijk | */ </span>
+				<span id="colophonDate">&#169; {this.state.date} Eline Zuiderwijk &#124; </span>
 				<span>door Sander Langendoen</span> 
 			</div>
 
