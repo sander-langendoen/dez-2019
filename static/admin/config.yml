@@ -22,9 +22,37 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/lezingen/index.md"
+        label: "Lezingen"
+        name: "lezingen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/over-dietist-eline-zuiderwijk/index.md"
+        label: "Over Dietist Eline Zuiderwijk"
+        name: "over-dietist-eline-zuiderwijk"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/algemene-voorwaarden/index.md"
+        label: "Algemene voorwaarden"
+        name: "algemene-voorwaarden"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/lezingen/index.md"
+        label: "Lezingen"
+        name: "lezingen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/online-voedingsadvies/index.md"
+        label: "Online voedingsadvies"
+        name: "online-voedingsadvies"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
@@ -36,9 +64,37 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/testpage/index.md"
-        label: "Testpage"
-        name: "testpage"
+      - file: "src/pages/dietistenpraktijk-dordrecht/index.md"
+        label: "Dietistenpraktijk Dordrecht"
+        name: "dietistenpraktijk-dordrecht"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/dietistenpraktijk-leidschendam-voorburg/index.md"
+        label: "Dietistenpraktijk Leidschendam-Voorburg"
+        name: "dietistenpraktijk-leidschendam-voorburg"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/privacyverklaring/index.md"
+        label: "Privacyverklaring"
+        name: "privacyverklaring"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/tarieven-en-vergoedingen/index.md"
+        label: "Tarieven en vergoedingen"
+        name: "tarieven-en-vergoedingen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/werkwijze/index.md"
+        label: "Werkwijze"
+        name: "werkwijze"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
