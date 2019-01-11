@@ -22,77 +22,77 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/lezingen/index.md"
+      - file: "src/pages/lezingen.md"
         label: "Lezingen"
         name: "lezingen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/over-dietist-eline-zuiderwijk/index.md"
+      - file: "src/pages/over-eline.md"
         label: "Over Dietist Eline Zuiderwijk"
         name: "over-dietist-eline-zuiderwijk"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/algemene-voorwaarden/index.md"
+      - file: "src/pages/algemene-voorwaarden.md"
         label: "Algemene voorwaarden"
         name: "algemene-voorwaarden"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/lezingen/index.md"
+      - file: "src/pages/lezingen.md"
         label: "Lezingen"
         name: "lezingen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/online-voedingsadvies/index.md"
+      - file: "src/pages/online-voedingsadvies.md"
         label: "Online voedingsadvies"
         name: "online-voedingsadvies"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/praktijklocaties/index.md"
+      - file: "src/pages/praktijklocaties.md"
         label: "Praktijklocaties"
         name: "praktijklocaties"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/dietistenpraktijk-dordrecht/index.md"
+      - file: "src/pages/dietistenpraktijk-dordrecht.md"
         label: "Dietistenpraktijk Dordrecht"
         name: "dietistenpraktijk-dordrecht"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/dietistenpraktijk-leidschendam-voorburg/index.md"
+      - file: "src/pages/dietistenpraktijk-leidschendam-voorburg.md"
         label: "Dietistenpraktijk Leidschendam-Voorburg"
         name: "dietistenpraktijk-leidschendam-voorburg"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/privacyverklaring/index.md"
+      - file: "src/pages/privacyverklaring.md"
         label: "Privacyverklaring"
         name: "privacyverklaring"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/tarieven-en-vergoedingen/index.md"
+      - file: "src/pages/tarieven-en-vergoedingen.md"
         label: "Tarieven en vergoedingen"
         name: "tarieven-en-vergoedingen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/werkwijze/index.md"
+      - file: "src/pages/werkwijze.md"
         label: "Werkwijze"
         name: "werkwijze"
         fields:
@@ -113,7 +113,6 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-
   - name: "recipes"
     label: "Recipes"
     folder: "src/pages/recipes"
@@ -126,7 +125,6 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "footer-widgets"
     label: "Footer widgets"
     folder: "src/pages/footer-widgets"
@@ -137,4 +135,3 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-    editor: true
