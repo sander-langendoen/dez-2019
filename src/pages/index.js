@@ -19,7 +19,7 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
+                  style={{ padding: '2em 0em' }}
                   key={post.id}
                 >
                   <p>
@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
                     <br />
                     <br />
                     <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
+                      Lees verder →
                     </Link>
                   </p>
                 </div>
