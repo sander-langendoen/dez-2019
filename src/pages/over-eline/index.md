@@ -1,6 +1,9 @@
 ---
 templateKey: about-page
-title: Over mij
+path: /over-dietist-eline-zuiderwijk
+title: Over Dietist Eline Zuiderwijk
+
+
 ---
 ## Opleiding en visie
 
