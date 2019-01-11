@@ -1,6 +1,6 @@
 ---
 templateKey: 'about-page'
-path: /over-dietist-eline-zuiderwijk/tarieven
+path: /tarieven
 title: Tarieven en vergoeding
 ---
 ## Tarieven
