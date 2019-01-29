@@ -2,13 +2,20 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-
+import Header from './Header'
+import Footer from './Footer'
+import ToptakenList from './Toptaken/Toptakenlist'
 
 import './all.sass'
 
+
+const homepageCheck = window.location.href.indexOf("/over-eline")
+
+
+
 const TemplateWrapper = ({ children }) => (
+
+  
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -39,7 +46,14 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
+        
         <Header />
+
+
+        {homepageCheck > 0 &&
+            <ToptakenList />
+        }
+
         
         <div>{children}</div>
 

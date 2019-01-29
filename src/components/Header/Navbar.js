@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../../img/github-icon.svg'
+import homeicon from '../../img/home.svg'
+
 
 const Navbar = class extends React.Component {
 
@@ -26,48 +27,54 @@ const Navbar = class extends React.Component {
      });
    }
  }
+
  
- render() {
-   return (
+    render() {
+    return (
   
-    <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+        <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
 
-        <div className="container">
-        
-            <div className="navbar-brand">
+            <div className="container">
+            
+                <div className="navbar-brand">
 
-            {/* Hamburger menu */}
-                <div className="navbar-burger burger" data-target="navMenu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                {/* Hamburger menu */}
+                    <div className="navbar-burger burger" data-target="navMenu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </div>
+
+                <div id="navMenu" className="navbar-menu">
+
+                    <div className="navbar-start has-text-centered">
+
+                        <Link className="navbar-item" to="/">
+                            <span className="icon">
+                                <img src={homeicon} alt="home icoon linkt naar homepage"/>
+                            </span>
+                        </Link>
+                        <Link className="navbar-item" to="/over-eline">
+                          Over Dietist Eline Zuiderwijk
+                        </Link>
+                        <Link className="navbar-item" to="/gezonde-recepten">
+                          Gezonde recepten
+                        </Link>
+                        <Link className="navbar-item" to="/praktijklocaties">
+                          Praktijklocaties
+                        </Link>
+                        <Link className="navbar-item" to="/contact">
+                          Contact
+                        </Link>
+                        <Link className="navbar-item" to="/contact/examples">
+                          Form Examples
+                        </Link>
+                    </div>
                 </div>
             </div>
-
-            <div id="navMenu" className="navbar-menu">
-
-                <div className="navbar-start has-text-centered">
-
-                    <Link className="navbar-item" to="/about">
-                      About
-                    </Link>
-                    <Link className="navbar-item" to="/products">
-                      Products
-                    </Link>
-                    <Link className="navbar-item" to="/praktijklocaties">
-                      Praktijklocaties
-                    </Link>
-                    <Link className="navbar-item" to="/contact">
-                      Contact
-                    </Link>
-                    <Link className="navbar-item" to="/contact/examples">
-                      Form Examples
-                    </Link>
-                </div>
-            </div>
-        </div>
-    </nav>
-  )}
+        </nav>
+    )}
 }
 
 export default Navbar
