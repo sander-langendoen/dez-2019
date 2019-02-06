@@ -9,8 +9,7 @@ description: >-
 tags:
   - brewing
   - chemex
-image: /img/flavor_wheel.jpg
-featuredImage: "/img/coffee-gear.png"
+featuredImage: /img/wortelsoep-thumb.jpg
 ---
 ![chemex](/img/chemex.jpg)
 
