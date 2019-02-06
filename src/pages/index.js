@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
-
 import styled from 'styled-components'
 
 const Intro = styled.section`
@@ -122,11 +121,11 @@ export default class IndexPage extends React.Component {
                   <div>
                     <Link to={post.fields.slug}>
                       {post.frontmatter.title}
-                      {console.log(post)}
+                      
                     </Link>
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
-
+                    {console.log(post)}
                     <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
                   </div>
                   <p>
@@ -198,7 +197,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             featuredImage {
                 childImageSharp{
-                    sizes(maxWidth: 630) {
+                    sizes(maxWidth: 2040) {
                         ...GatsbyImageSharpSizes
                     }
                 }
