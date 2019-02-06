@@ -9,7 +9,7 @@ import locatiedordt from '../img/dietist-locatie-dordrecht.jpg'
 import styled from 'styled-components'
 
 
-const FooterWrapper = styled.footer`
+const FooterWrapper = styled.div`
 	padding: 2em 0;
 	background: #cce5cc;
 `;
@@ -48,7 +48,7 @@ const Footer = class extends React.Component {
 
 		return (
 
-			<div>
+			<footer>
 
 				<FooterWrapper>
 
@@ -67,8 +67,9 @@ const Footer = class extends React.Component {
 				</FooterWrapper>
 
 				<Colophon />
+
+			</footer>
 				
-			</div>
 		)
 	}
 

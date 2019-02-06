@@ -3,15 +3,17 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from './Header'
+import Navbar from './Header/Navbar'
 import Footer from './Footer'
-import ToptakenList from './Toptaken/Toptakenlist'
+
+import styled from 'styled-components'
 
 import './all.sass'
 
-
-const homepageCheck = window.location.href.indexOf("/over-eline")
-
-
+const Main = styled.main`
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+`;
 
 const TemplateWrapper = ({ children }) => (
 
@@ -48,14 +50,9 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         
         <Header />
-
-
-        {homepageCheck > 0 &&
-            <ToptakenList />
-        }
-
+        <Navbar/>
         
-        <div>{children}</div>
+        <Main>{children}</Main>
 
         <Footer />
       </div>

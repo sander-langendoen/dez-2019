@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import homeicon from '../../img/home.svg'
+// import homeicon from '../../img/home.svg'
 
 
 const Navbar = class extends React.Component {
@@ -50,11 +50,12 @@ const Navbar = class extends React.Component {
 
                     <div className="navbar-start has-text-centered">
 
+                        { /*}
                         <Link className="navbar-item" to="/">
                             <span className="icon">
                                 <img src={homeicon} alt="home icoon linkt naar homepage"/>
                             </span>
-                        </Link>
+                        </Link> */ }
                         <Link className="navbar-item" to="/over-eline">
                           Over Dietist Eline Zuiderwijk
                         </Link>
@@ -66,9 +67,6 @@ const Navbar = class extends React.Component {
                         </Link>
                         <Link className="navbar-item" to="/contact">
                           Contact
-                        </Link>
-                        <Link className="navbar-item" to="/contact/examples">
-                          Form Examples
                         </Link>
                     </div>
                 </div>
