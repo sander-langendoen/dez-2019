@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+
 import Img from 'gatsby-image'
+
 import styled from 'styled-components'
 
 const Intro = styled.section`
@@ -126,7 +128,9 @@ export default class IndexPage extends React.Component {
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
                     {console.log(post)}
+
                     <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+                   
                   </div>
                   <p>
                     {post.excerpt}
@@ -148,16 +152,18 @@ export default class IndexPage extends React.Component {
 
 
         <section className="section section-profile">
-            <h2 class="title">Diëtist Eline Zuiderwijk</h2>
+            <h2 className="title">Diëtist Eline Zuiderwijk</h2>
+            
+            <h3 className="title">locatie Voorburg / Leidschendam:</h3>
             <p>
-            <h3 class="title">locatie Voorburg / Leidschendam:</h3>
             Overgoo 1
             2262 JZ Leidschendam
             06-1416 3760
             Routebeschrijving Google Maps
             </p>
+            
+            <h3 className="title">locatie Dordrecht:</h3>
             <p>
-            <h3 class="title">locatie Dordrecht:</h3>
             Van Neurenburgpad 2a
             3311 DN Dordrecht
             06-1416 3760

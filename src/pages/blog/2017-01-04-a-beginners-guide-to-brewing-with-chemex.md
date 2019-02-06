@@ -10,6 +10,7 @@ tags:
   - brewing
   - chemex
 image: /img/flavor_wheel.jpg
+featuredImage: "/img/coffee-gear.png"
 ---
 ![chemex](/img/chemex.jpg)
 
