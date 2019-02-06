@@ -9,7 +9,7 @@ description: >-
 tags:
   - brewing
   - chemex
-featuredImage: /img/wortelsoep-thumb.jpg
+featuredImage: /img/wortelsoep.jpg
 ---
 ![chemex](/img/chemex.jpg)
 
