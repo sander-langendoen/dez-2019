@@ -58,7 +58,7 @@ const BlogList = styled.section`
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem 0;
+        
     }
 `;
 
@@ -78,8 +78,8 @@ const BlogItem = styled.div`
     }
 `;
 
-const Ervaringen = styled.section`
-    grid-column: 6 / -1;
+const ErvaringenIntro = styled.section`
+    grid-column: 1 / 7;
     padding: 2rem;
 
 
@@ -89,6 +89,18 @@ const Ervaringen = styled.section`
 
     @media (min-width: 1024px) {
         padding: 5rem;
+    }
+`;
+
+const Ervaringen = styled.section`
+    grid-column: 8 / 12;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        
+    }
+
+    @media (min-width: 1024px) {
+        
     }
 `;
 
@@ -160,7 +172,7 @@ export default class IndexPage extends React.Component {
                         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
                     </ImgWrap>
 
-                    <div className="item-content" style={{padding: '2rem'}}>
+                    <div className="item-content" style={{padding: '1.5rem'}}>
                         <Link to={post.fields.slug}>
 
                             <h3>{post.frontmatter.title}</h3>
@@ -202,8 +214,86 @@ export default class IndexPage extends React.Component {
         </BlogsIntro>
 
         
+        <ErvaringenIntro>
+            <h2>Wat vinden jullie van mij?</h2>
+            
+            <div itemscope="" itemtype="http://schema.org/Service">
+                <span itemProp="name" style={{display: 'none'}}>
+                    Algemene waardering                
+                </span>
+                
+                Algemene waardering:             
+                <span itemProp="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+
+                    <span className="stars">
+                        ★★★★★                   
+                    </span>
+
+                    <span className="rating" itemProp="ratingValue" style={{display: 'none !important'}}>
+                        5                   
+                    </span> gebaseerd op
+
+                    <span class="votes" itemProp="reviewCount">
+                        22                  
+                    </span> reviews
+                    
+                    <div style={{display: 'none'}}>
+                        <span itemProp="bestRating">5</span>
+                        <span itemProp="worstRating">1</span>
+                    </div>
+                </span>
+            </div>
+        </ErvaringenIntro>
+
         <Ervaringen>
-            <h2 className="title">Wat vinden jullie van mij?</h2>
+            <div className="testimonial" itemscope="" itemtype="http://schema.org/Review">
+                <h3 className="rr_title" itemProp="name">Ik geloof niet zo in een dieet</h3>
+
+                <span itemProp="itemReviewed" itemscope="" itemtype="http://schema.org/Service">
+                    <div className="rr_review_post_id" itemProp="name" style={{display: 'none'}}>
+                        <a href="https://dietist-elinezuiderwijk.nl/reviews/">
+                            Ervaringen van anderen          
+                        </a>
+                    </div>
+
+                </span>
+                <span className="rr_date" style={{display: 'none'}}>
+                    <meta itemProp="datePublished" content="2017-01-03 14:55:27" />
+                    <time datetime="3 januari, 2017">3 januari, 2017</time>
+                </span>
+                <div className="stars">
+                    ★★★★★       
+                </div>
+                <div style={{display: 'none'}} itemProp="reviewRating" itemscope="" itemtype="http://schema.org/Rating" />
+                    <span itemProp="ratingValue">
+                        5
+                    </span>
+                    <span itemProp="bestRating">
+                        5
+                    </span>
+                    <span itemProp="worstRating">
+                        1
+                    </span>
+                </div>
+
+
+                <div className="rr_review_text">
+                    <span className="drop_cap">“</span>
+                    <span itemProp="reviewBody">
+                        Vorig jaar januari wilde ik mijn gewicht eindelijk eens goed aanpakken en gezonder gaan eten. Ik geloof niet zo in een dieet. 
+                        Afvallen kon ik best goed maar op gewicht blijven was een heel ander ding. Eline heeft me het afgelopen jaar super goed begeleid. 
+                        Ze weet ontzettend veel over voeding en gezond eten. Ik kijk echt uit naar mijn afspraken met haar. Je kunt Eline alles vragen over 
+                        welke producten dan ook. Als ze het antwoord niet meteen weet, wordt het opgezocht en besproken. Heel erg fijn. Ze weet precies wat 
+                        goed werkt. Ik kan gewoon alles eten maar natuurlijk wel minder en ik heb geleerd anders te eten. Mijn nieuwe manier van eten is, 
+                        mede doordat het zo geleidelijk is gegaan, ongemerkt mijn nieuwe standaard geworden. Het bevalt me prima en ik voel me super goed. 
+                        In een jaar tijd ben ik 28 kilo afgevallen en is mijn vetpercentage enorm gedaald. Ik had nooit gedacht dit dit me zou lukken op zo’n
+                        prettige manier. Natuurlijk kost het soms moeite en is zelfdiscipline nodig maar met de juiste begeleiding, is het gewoon echt een stuk 
+                        makkelijker. Daarvoor ben je bij Eline absoluut aan het juiste adres.
+                    </span>
+                    <div className="rr_review_name" itemProp="author" itemscope="" itemtype="http://schema.org/Person">
+                        <span itemProp="name"> - Anoniem           </span>
+                    </div>
+                </div>
         </Ervaringen>
 
 
