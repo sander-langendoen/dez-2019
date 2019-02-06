@@ -112,18 +112,20 @@ export default class IndexPage extends React.Component {
             
             {posts
               .map(({ node: post }) => (
+
                 <div
                   className="blog-item"
                   style={{ padding: '2em 0em' }}
                   key={post.id}
                 >
-                  <p>
+                  <div>
                     <Link to={post.fields.slug}>
                       {post.frontmatter.title}
+                      {console.log(post)}
                     </Link>
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
-                  </p>
+                  </div>
                   <p>
                     {post.excerpt}
                     <br />
@@ -139,7 +141,7 @@ export default class IndexPage extends React.Component {
 
         
         <section className="section section-ervaringen">
-            <h2 class="title">Wat vinden jullie van mij?</h2>
+            <h2 className="title">Wat vinden jullie van mij?</h2>
         </section>
 
 
@@ -191,6 +193,10 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            featuredImage {
+                name
+                absolutePath
+            }
           }
         }
       }
