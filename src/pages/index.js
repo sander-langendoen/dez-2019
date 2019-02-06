@@ -127,7 +127,7 @@ export default class IndexPage extends React.Component {
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
 
-                    <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+                    <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
                   </div>
                   <p>
                     {post.excerpt}
