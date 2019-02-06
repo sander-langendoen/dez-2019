@@ -9,6 +9,7 @@ tags:
   - flavor
   - tasting
 image: /img/flavor_wheel.jpg
+featuredImage: "/img/coffee-gear.png"
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
