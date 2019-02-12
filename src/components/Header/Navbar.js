@@ -8,11 +8,11 @@ const NavBarWrap = styled.nav`
     grid-template-columns: repeat(12, 1fr);
 `;
 
-const NavBarMenu = styled.div`
+const NavBarMenu = styled.ul`
     grid-column: 2 / 10;
 `;
 
-const NavBarItem = styled.span`
+const NavBarItem = styled.li`
     padding-right: 1rem;
 
     &:last-child {
@@ -23,44 +23,30 @@ const NavBarItem = styled.span`
 
 const Navbar = class extends React.Component {
 
-  componentDidMount() {
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
+    constructor(props) {
+        super(props);
+        this.state = {isToggleOn: true};
 
-            // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
-                el.addEventListener('click', () => {
+        // This binding is necessary to make `this` work in the callback
+        this.handleClick = this.handleClick.bind(this);
+    } 
 
-                 // Get the target from the "data-target" attribute
-                 const target = el.dataset.target;
-                 const $target = document.getElementById(target);
+    handleClick() {
+        this.setState(state => ({
+          isToggleOn: !state.isToggleOn
+        }));
+      }
 
-                 // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                 el.classList.toggle('is-active');
-                 $target.classList.toggle('is-active');
-
-                });
-            });
-        }
-    }
-
- 
+   
     render() {
     return (
   
         <NavBarWrap>
             
-                <div className="navbar-brand">
+                <button onClick={this.handleClick} className={this.state.isToggleOn ? 'ON' : 'OFF'}>
+                    {this.state.isToggleOn ? 'ON' : 'OFF'}
+                </button>
 
-                {/* Hamburger menu */}
-                    <div className="navbar-burger burger" data-target="navMenu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                </div>
 
                 <NavBarMenu>
 

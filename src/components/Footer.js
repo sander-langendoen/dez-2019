@@ -2,9 +2,6 @@ import React from 'react'
 
 import FooterCol from '../components/Footer/Col'
 import Colophon from '../components/Footer/Colophon'
-import Image from '../components/Global/Image'
-// import { Link } from 'gatsby'
-import locatiedordt from '../img/dietist-locatie-dordrecht.jpg'
 
 import styled from 'styled-components'
 
@@ -56,10 +53,7 @@ const Footer = class extends React.Component {
 
 						<FooterCol title="Snelmenu" content="" />
 						<FooterCol title="Mijn algemene beoordeling" content="" />
-						
-						<Image src={locatiedordt} alt="dietistenpraktijk locatie dordrecht" />	
-						<Image src={locatiedordt} alt="dietistenpraktijk locatie leidschendam voorburg" />	
-																		 	
+																								 	
 						<FooterCol title="Mijn contactgegevens" content="" />
 
 					</FooterInner>

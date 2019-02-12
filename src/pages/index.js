@@ -4,36 +4,45 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Img from 'gatsby-image'
+import profileimg from '../img/Dietist-Eline-Zuiderwijk.jpg'
+
 
 import styled from 'styled-components'
 
 const Intro = styled.section`
-    grid-column: 1 / 8;
+    grid-column: 1 / -1;
     // background-color: #fafafa;
     padding: 2rem;
 
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        padding: 3.5rem;
+        grid-column: 2 / 8;
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem 0;
-        grid-column-start: 2;
+        grid-column: 2 / 8;
     }
 `;
 
 const ProfileImg = styled.section`
-    grid-column: 8 / -1;
-    // background-color: #fafafa;
-    background-image: url("/img/Dietist-Eline-Zuiderwijk.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: left -7rem center;
+    grid-column: 1 / -1;
+
+    img {
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-column: 8 / -1;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 8 / -1;
+    }
 `;
 
 const BlogsIntro = styled.section`
-    grid-column: 8 / 12;
+    grid-column: 1 / 12;
+    grid-row: 3 / 3;
     background-image: url("/img/bg.svg");
     background-repeat: no-repeat; 
     background-size: cover;
@@ -41,24 +50,24 @@ const BlogsIntro = styled.section`
 
 
     @media (min-width: 768px) and (max-width: 1023px) {
-
+        grid-column: 7 / 12;
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem 0;
+        grid-column: 7 / 12;
     }
 `;
 
 const BlogList = styled.section`
-    grid-column: 1 / 7;
-
+    grid-column: 1 / 12;
+    grid-row: 4 / 4;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-
+        grid-column: 1 / 7;
     }
 
     @media (min-width: 1024px) {
-        
+        grid-column: 1 / 7;
     }
 `;
 
@@ -79,56 +88,88 @@ const BlogItem = styled.div`
 `;
 
 const ErvaringenIntro = styled.section`
-    grid-column: 1 / 7;
+    grid-column: 1 / 12;
     padding: 2rem;
-
+    background-color: #CCE5CC;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        padding: 3.5rem;
+        grid-column: 1 / 7;
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem;
+        grid-column: 1 / 7;
     }
 `;
 
 const Ervaringen = styled.section`
-    grid-column: 8 / 12;
+    grid-column: 1 / 12;
+    padding: 2rem 3rem;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        
+        grid-column: 7 / 12;
     }
 
     @media (min-width: 1024px) {
-        
+        grid-column: 7 / 12;
     }
 `;
 
-const LocatieDordt = styled.section`
-    grid-column: 6 / -1;
-    padding: 2rem;
-
-
+const LocatieLeidschMap = styled.section`
+    grid-column: 1 / -1;
+    background-image: url("/img/dietist-locatie-leidschendam-voorburg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+ 
     @media (min-width: 768px) and (max-width: 1023px) {
-        padding: 3.5rem;
+        grid-column: 7 / -1;
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem;
+        grid-column: 7 / -1;
     }
 `;
 
 const LocatieLeidsch = styled.section`
-    grid-column: 6 / -1;
+    grid-column: 1 / -1;
     padding: 2rem;
 
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        padding: 3.5rem;
+        grid-column: 1 / 7;
     }
 
     @media (min-width: 1024px) {
-        padding: 5rem;
+        grid-column: 1 / 7;
+    }
+`;
+
+const LocatieDordtMap = styled.section`
+    grid-column: 1 / -1;
+    background-image: url("/img/dietist-locatie-dordrecht.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+ 
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-column: 1 / 7;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 1 / 7;
+    }
+`;
+
+const LocatieDordt = styled.section`
+    grid-column: 1 / -1;
+    padding: 2rem;
+    background-color: #81B3A5;
+    color: white;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-column: 7 / -1;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 7 / -1;
     }
 `;
 
@@ -157,7 +198,9 @@ export default class IndexPage extends React.Component {
             <p className="is-handwriting">Eline</p>
         </Intro>   
 
-        <ProfileImg />
+        <ProfileImg>
+            <img src={profileimg} alt="foto eline zuiderwijk" />
+        </ProfileImg>
 
         <BlogList>
             
@@ -166,7 +209,7 @@ export default class IndexPage extends React.Component {
 
                 <BlogItem key={post.id} >
                 
-                    {console.log(post)}
+                    {/* console.log(post) */ }
 
                     <ImgWrap>
                         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
@@ -217,13 +260,13 @@ export default class IndexPage extends React.Component {
         <ErvaringenIntro>
             <h2>Wat vinden jullie van mij?</h2>
             
-            <div itemscope="" itemtype="http://schema.org/Service">
+            <div itemScope="" itemType="http://schema.org/Service">
                 <span itemProp="name" style={{display: 'none'}}>
                     Algemene waardering                
                 </span>
                 
                 Algemene waardering:             
-                <span itemProp="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                <span itemProp="aggregateRating" itemScope="" itemType="http://schema.org/AggregateRating">
 
                     <span className="stars">
                         ★★★★★                   
@@ -233,7 +276,7 @@ export default class IndexPage extends React.Component {
                         5                   
                     </span> gebaseerd op
 
-                    <span class="votes" itemProp="reviewCount">
+                    <span className="votes" itemProp="reviewCount">
                         22                  
                     </span> reviews
                     
@@ -246,10 +289,10 @@ export default class IndexPage extends React.Component {
         </ErvaringenIntro>
 
         <Ervaringen>
-            <div className="testimonial" itemscope="" itemtype="http://schema.org/Review">
+            <div className="testimonial" itemScope="" itemType="http://schema.org/Review">
                 <h3 className="rr_title" itemProp="name">Ik geloof niet zo in een dieet</h3>
 
-                <span itemProp="itemReviewed" itemscope="" itemtype="http://schema.org/Service">
+                <span itemProp="itemReviewed" itemScope="" itemType="http://schema.org/Service">
                     <div className="rr_review_post_id" itemProp="name" style={{display: 'none'}}>
                         <a href="https://dietist-elinezuiderwijk.nl/reviews/">
                             Ervaringen van anderen          
@@ -259,12 +302,12 @@ export default class IndexPage extends React.Component {
                 </span>
                 <span className="rr_date" style={{display: 'none'}}>
                     <meta itemProp="datePublished" content="2017-01-03 14:55:27" />
-                    <time datetime="3 januari, 2017">3 januari, 2017</time>
+                    <time dateTime="3 januari, 2017">3 januari, 2017</time>
                 </span>
                 <div className="stars">
                     ★★★★★       
                 </div>
-                <div style={{display: 'none'}} itemProp="reviewRating" itemscope="" itemtype="http://schema.org/Rating" />
+                <div style={{display: 'none'}} itemProp="reviewRating" itemScope="" itemType="http://schema.org/Rating" />
                     <span itemProp="ratingValue">
                         5
                     </span>
@@ -290,7 +333,7 @@ export default class IndexPage extends React.Component {
                         prettige manier. Natuurlijk kost het soms moeite en is zelfdiscipline nodig maar met de juiste begeleiding, is het gewoon echt een stuk 
                         makkelijker. Daarvoor ben je bij Eline absoluut aan het juiste adres.
                     </span>
-                    <div className="rr_review_name" itemProp="author" itemscope="" itemtype="http://schema.org/Person">
+                    <div className="rr_review_name" itemProp="author" itemScope="" itemType="http://schema.org/Person">
                         <span itemProp="name"> - Anoniem           </span>
                     </div>
                 </div>
@@ -308,7 +351,9 @@ export default class IndexPage extends React.Component {
             Routebeschrijving Google Maps
             </p>
         </LocatieLeidsch> 
+        <LocatieLeidschMap />
 
+        <LocatieDordtMap /> 
         <LocatieDordt>    
             <h3 className="title">locatie Dordrecht:</h3>
             <p>
