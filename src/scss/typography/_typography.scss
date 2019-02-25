@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Hind');
+
+$preferred_font: Hind;
+$second_font: Montserrat;
+
+html, body {
+    font-family: $preferred_font;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $second_font;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+a {
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        text-decoration: double;
+    }
+}
+
+
+// h1 {
+//     font-size: $beta;
+//     line-height: $beta + 6px;
+//     margin: 0 0 $grid-gutter-width-base / 2 0 !important;
+//     font-weight: $font-light;
+// }
+
+// h2 {
+//     font-size: $gamma;
+//      @include breakpoint($maxxs) {
+//         font-size: $gamma - 4px;
+//     }
+//     margin-bottom: $grid-gutter-width-base / 2;
+//     font-weight: $font-light;
+// }
+
+// h3 { 
+//     font-size: $gamma;
+//     @include breakpoint($maxxs) {
+//         font-size: $gamma - 4px;
+//     }
+//     margin-bottom: $grid-gutter-width-base / 2;
+//     font-weight: $font-light;
+// }
+
+// p {
+//     font-size: $eta + 3px;
+//     line-height: 20px;
+//     @include breakpoint($minmd) {
+//         line-height: 26px;
+//     }
+// }
+
+// li {
+//     font-size: $eta;
+//     font-weight: $font-light;
+// }
+
+// strong { font-weight: $font-bold; }
+
+// em { font-style: italic; }
+
+// a {
+//     text-decoration: none;
+//     color: $color-alpha;
+//     &:hover,
+//     &:focus {
+//         text-decoration: none;
+//         outline: 0;
+//         .icon {
+//             text-decoration:none;
+//         }
+//     }
+// }

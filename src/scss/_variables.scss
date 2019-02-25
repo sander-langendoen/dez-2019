@@ -1,0 +1,302 @@
+// SETTINGS 
+// -------------------------------------------------------------------------
+// TABLE OF CONTENT
+// 01 Client color palette
+// 02 General colors
+// 03 Typography
+//  - 03.a Textsizes
+//  - 03.b Textcolors
+// 04 Buttons
+// 05 Images
+// 06 Forms
+// 07 DG
+// 08 Lists
+// 09 Layout
+//  - 09.a Header
+//  - 09.b Footer
+//  - 09.c Herobanner homepage
+//  - 09.d News
+//  - 09.e Infobank
+//  - 09.f Search
+//  - 09.g Loader
+//  - 09.h Stappenplan
+//  - 09.i Herocarrousel
+// 10 Measurements / sizes
+//  - 10.a Gapsizes
+//  - 10.b Borders
+//  - 10.c Screensizes
+
+///////////////////////////////////////////////////////////////////////
+
+$clientname: "dez";
+
+// -------------------------------------------------------------------------
+// 01 - CLIENT COLOR PALETTE
+// -------------------------------------------------------------------------
+$black: #777777;
+$white: #fff;
+$grey-light: #e7e5e6;
+$grey-medium: #d2d6d9;
+$grey-dark:#939598;
+$cyan: #10A8CD;
+$cyan-light:#6ccbe0;
+$blue: #0e78ac;
+$blue-dark: #004b6e;
+$green: #bcd12e;
+$green-dark: #92a525; 
+$red: #ff0000;
+$orange: #E18C26;
+$black-secondary: #222222;
+$turq: #bcd12f;
+$turq-dark: #005F6C;
+
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 02 - GENERAL COLORS 
+// -------------------------------------------------------------------------
+$color-base: $black;
+$color-accent-medium: $grey-medium;
+$color-accent-light: $grey-light;
+$color-accent-dark: $grey-dark;
+
+$color-primary: $orange;
+$color-primary-light: lighten($color-primary, 5%); 
+$color-primary-dark: darken($color-primary, 5%);
+
+$color-secondary: $black-secondary;
+$color-secondary-light: lighten($color-secondary, 5%);
+$color-secondary-dark: darken($color-secondary, 5%);
+
+$color-cta: $turq;
+$color-cta-hover: $turq-dark;
+
+$color-bg: $white;
+$color-panel: $color-accent-light;
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 03 - TYPOGRAPHY 
+// -------------------------------------------------------------------------
+$fontpath: "../../fonts";
+$webfont-fallback: Helvetica, Arial, sans-serif;
+$webfont-primary-light: 'Rockwell-light', $webfont-fallback;
+$webfont-primary-regular: 'Rockwell-regular', $webfont-fallback;
+$webfont-primary-bold: 'Rockwell-bold', $webfont-fallback;
+$webfont-secondary-regular: 'Lato-regular', $webfont-fallback;
+
+// -------------------------------------------------------------------------
+// 03.a - Textsizes 
+// -------------------------------------------------------------------------
+$fontsize-base:16px;
+$fontsize-base-mobile:14px;
+$fontsize-h1:2.625rem; // 42px
+$fontsize-h2:1.625rem; // 26px
+$fontsize-h3:1.625rem; // 22px
+$fontsize-h4:1.25rem; // 20px
+$fontsize-h5:1.125rem; // 18px
+$fontsize-h6:1rem; // 16px
+$fontsize-introtext:1.75rem; // 28px
+$fontsize-streamer:1.375rem;// 22px
+$fontsize-list-links:1.125rem; // 18px
+$fontsize-breadcrumb: 0.8125rem; // 13px
+$fontsize-dg-question:1.25rem; // 20px
+
+// -------------------------------------------------------------------------
+// 03.a - Textcolors
+// -------------------------------------------------------------------------
+$color-text: $color-base;
+$color-title:$color-base;
+$color-subtitle:$color-base;
+$color-text-intro:$color-secondary;
+$color-streamer:$color-primary;
+
+$color-link: $color-secondary;
+$color-link-hover: $color-secondary-dark;
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 04 - BUTTONS
+// -------------------------------------------------------------------------
+$color-button-primary: $color-cta;
+$color-button-primary-hover: $color-cta-hover;
+
+$color-button-secondary: $color-secondary;
+$color-button-secondary-hover: $color-secondary-dark;
+
+$color-button-disabled: $color-accent-dark;
+$color-button-disabled-text: $color-accent-light;
+
+$borderradius-buttons:3px;
+
+// -------------------------------------------------------------------------
+// 05 - IMAGES
+// -------------------------------------------------------------------------
+$imgpath:"../../images";
+$irisdrivepath:"/publishedMedia";
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 06 - FORMS
+// -------------------------------------------------------------------------
+$color-input: $white;
+$color-label:$color-base;
+$color-invalid: $red;
+$color-input-active: $color-secondary;
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 07 - DG
+// -------------------------------------------------------------------------
+
+$color-dg-question:$color-primary;
+$color-dg-history-question:$color-base;
+$color-dg-active-panel:$color-panel;
+$color-dg-history-panel:$color-base;
+
+///////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 08 - LISTS
+// -------------------------------------------------------------------------
+
+$color-listitem-title:$color-base;
+$color-listitem-subtitle:$color-primary;
+$fontsize-listitem-title:$fontsize-h4;
+$fontsize-listitem-subtitle:$fontsize-h6;
+
+///////////////////////////////////////////////////////////////////////
+
+
+// -------------------------------------------------------------------------
+// 09 - LAYOUT
+// -------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------
+// 09.a - Header
+// -------------------------------------------------------------------------
+$color-header-bg:$color-bg;
+$color-header-link:$color-link;
+$color-header-link-hover:$color-link-hover;
+$color-header-icon:$color-primary;
+$mobile-header-height:4rem;
+
+// -------------------------------------------------------------------------
+// 09.b - Footer
+// -------------------------------------------------------------------------
+$color-footer-bg: $color-accent-dark;
+$color-footer-title: $white;
+$color-footer-text: $color-text;
+$color-footer-link:$color-text;
+$color-cta-footer-button:$color-cta;
+$color-socialmedia-bg: $white;
+$color-socialmedia-icons: $color-accent-dark;
+
+// -------------------------------------------------------------------------
+// 09.c - Herobanner homepage
+// -------------------------------------------------------------------------
+$color-hero-title: $white;
+$color-hero-title-mobile: $color-text;
+$color-hero-text: $color-text;
+$color-hero-button: $color-cta;
+$color-hero-button-hover: $color-cta-hover;
+
+// -------------------------------------------------------------------------
+// 09.d - News
+// -------------------------------------------------------------------------
+$color-newslist-title:$color-listitem-title;
+$color-newslist-date:$color-listitem-subtitle;
+$fontsize-newslist-title:$fontsize-listitem-title;
+$fontsize-newslist-date:$fontsize-listitem-subtitle;
+
+$color-news-date:$color-primary;
+$color-news-title:$color-title;
+$color-breakingnews-bg:$color-cta;
+$color-breakingnews-title:$color-text;
+$color-breakingnews-link:$white;
+
+// -------------------------------------------------------------------------
+// 09.e - Infobank
+// -------------------------------------------------------------------------
+$color-project-title:$color-title;
+$color-project-type:$color-primary;
+$color-project-city:$color-primary;
+
+$color-projectlist-title:$color-listitem-title;
+$color-projectlist-type:$color-listitem-subtitle;
+$color-projectlist-region:$color-listitem-subtitle;
+$fontsize-projectlist-title:$fontsize-listitem-title;
+$fontsize-projectlist-type:$fontsize-listitem-subtitle;
+$fontsize-projectlist-region:$fontsize-listitem-subtitle;
+
+// -------------------------------------------------------------------------
+// 09.f - Search
+// -------------------------------------------------------------------------
+$color-search-icon:$color-primary;
+$color-searchbar-header:$color-accent-light;
+$color-searchbar-footer:$color-input;
+$color-searchresult-label:$color-primary;
+
+// -------------------------------------------------------------------------
+// 09.g - Loader 
+// -------------------------------------------------------------------------
+$color-loaderbar:$color-secondary;
+$color-loaderspinner:$color-primary;
+$color-loadertext:$color-base;
+$color-loaderoverlay: rgba(0, 0, 0, 0.2);
+$color-loaderwrapper: rgba(255,255,255,.8);
+
+// -------------------------------------------------------------------------
+// 09.h - Stappenplan 
+// -------------------------------------------------------------------------
+$color-step-number:$white;
+$color-step-numberbg:$color-accent-dark;
+$color-step-borderline:$color-accent-dark;
+
+// -------------------------------------------------------------------------
+// 09.i - Herocarrousel 
+// -------------------------------------------------------------------------
+$color-carrousel-bg-textcontainer:RGBA(165,182,190,0.8);
+$color-carrousel-titletext:$white;
+$color-carrousel-text:$white;
+$color-carrousel-arrowbuttonbg:$color-accent-dark;
+$color-carrousel-arrowbuttonbg-active:$color-secondary;
+$carrousel-textblock-height:250px;
+$carrousel-textblock-width:45%;
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 10 - MEASUREMENTS / SIZES
+
+// -------------------------------------------------------------------------
+// 10.a - Gapsizes
+// -------------------------------------------------------------------------
+$gap-small: 15px;
+$gap-normal: 30px;
+$gap-large: 60px;
+
+// -------------------------------------------------------------------------
+// 10.b - Borders
+// -------------------------------------------------------------------------
+$borderradius: 3px;
+$color-border-line:$color-accent-medium;
+
+///////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
+// 10.c - screensizes
+// -------------------------------------------------------------------------
+$max-mobile-width: 640px;
+$max-tablet-width: 1024px;
+$desktop-width: 1300px;
+$xldesktop-width:1500px;
+
+///////////////////////////////////////////////////////////////////////

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+
 // import homeicon from '../../img/home.svg'
 import styled from 'styled-components'
 
@@ -9,7 +10,7 @@ const NavBarWrap = styled.nav`
 `;
 
 const NavBarMenu = styled.ul`
-    grid-column: 2 / 10;
+    grid-column: 2 / 13;
 `;
 
 const NavBarItem = styled.li`
@@ -19,7 +20,6 @@ const NavBarItem = styled.li`
         padding-right: 0;
     }
 `; 
-
 
 const Navbar = class extends React.Component {
 
@@ -35,51 +35,54 @@ const Navbar = class extends React.Component {
         this.setState(state => ({
           isToggleOn: !state.isToggleOn
         }));
-      }
+    }
 
    
     render() {
-    return (
-  
-        <NavBarWrap>
-            
-                <button onClick={this.handleClick} className={this.state.isToggleOn ? 'ON' : 'OFF'}>
+        return (
+    
+            <NavBarWrap>
+        
+                <button onClick={this.handleClick} className={this.state.isToggleOn ? 'is-active' : 'is-inactive'}>
                     {this.state.isToggleOn ? 'ON' : 'OFF'}
                 </button>
 
-
                 <NavBarMenu>
 
-                    { /*}
-                    <Link className="navbar-item" to="/">
-                        <span className="icon">
+                    <Link className="navbar-item" to="/" activeClassName="is-active">
+                        Home
+                        {/* <span className="icon">
                             <img src={homeicon} alt="home icoon linkt naar homepage"/>
-                        </span>
-                    </Link> */ }
+                        </span> */}
+                    </Link>
                     <NavBarItem>
-                        <Link className="navbar-item" to="/over-eline">
-                          Over Dietist Eline Zuiderwijk
+                        <Link className="navbar-item" to="/over-eline" activeClassName="is-active">
+                        Over Dietist Eline Zuiderwijk
                         </Link>
                     </NavBarItem>
                     <NavBarItem>
-                        <Link className="navbar-item" to="/gezonde-recepten">
-                          Gezonde recepten
+                        <Link className="navbar-item" to="/gezonde-recepten" activeClassName="is-active">
+                        Gezonde recepten
                         </Link>
                     </NavBarItem>
                     <NavBarItem>
-                        <Link className="navbar-item" to="/praktijklocaties">
-                          Praktijklocaties
+                        <Link className="navbar-item" to="/praktijklocaties" activeClassName="is-active">
+                        Praktijklocaties
                         </Link>
                     </NavBarItem>
                     <NavBarItem>
-                        <Link className="navbar-item" to="/contact">
-                          Contact
+                        <Link className="navbar-item" to="/contact" activeClassName="is-active">
+                        Contact
                         </Link>
                     </NavBarItem>
 
                 </NavBarMenu>
-        </NavBarWrap>
-    )}
+                    
+                
+            </NavBarWrap>
+
+        )
+    }
 }
 
 export default Navbar

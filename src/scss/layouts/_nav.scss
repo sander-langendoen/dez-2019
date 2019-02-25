@@ -1,0 +1,16 @@
+nav button {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+
+    &.is-inactive + ul {
+        margin-left: -100%;
+        margin-left: -100vw;
+        transition: margin 0.5s ease;
+    }
+
+    &.is-active + ul {
+        margin-left: 0;
+        transition: margin 0.5s ease;
+    }
+}

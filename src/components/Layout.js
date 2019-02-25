@@ -6,18 +6,13 @@ import Header from './Header'
 import Navbar from './Header/Navbar'
 import Footer from './Footer'
 
-import styled from 'styled-components'
+import '../css/main.css'
 
-import './all.sass'
+// const isHomepage = location.pathname === '/'
 
-const Main = styled.main`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-`;
 
 const TemplateWrapper = ({ children }) => (
 
-  
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -52,7 +47,7 @@ const TemplateWrapper = ({ children }) => (
         <Header />
         <Navbar/>
         
-        <Main>{children}</Main>
+		<main>{children}</main>
 
         <Footer />
       </div>
