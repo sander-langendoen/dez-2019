@@ -1,7 +1,26 @@
 main {
     section.is-homepage {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: "intro profileimg";
+        @media (max-width: 767px) {
+            display: grid;
+            min-height: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "intro intro" 
+                "profileimg profileimg"
+                "blogintro blogintro"
+                "bloglist bloglist"
+                "ervaringenintro ervaringenintro"
+                "ervaringen ervaringen"
+                "locatieleidschmap locatieleidsch"
+                "locatiedordt locatiedordtmap";
+        }
+    
+        @media (min-width: 768px) {
+            grid-template-areas: "intro profileimg"
+                                "bloglist blogintro"
+                                "ervaringenintro ervaringen"
+                                "locatieleidschmap locatieleidsch"
+                                "locatiedordt locatiedordtmap";
+        }
     }
 }

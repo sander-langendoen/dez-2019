@@ -10,23 +10,19 @@ import profileimg from '../img/Dietist-Eline-Zuiderwijk.jpg'
 import styled from 'styled-components'
 
 const Intro = styled.section`
-    // grid-column: 1 / -1;
-    // background-color: #fafafa;
     grid-area: intro;
-    padding: 2rem;
-
+    padding: 0 2rem;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 2 / 8;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 2 / 8;
+        
     }
 `;
 
 const ProfileImg = styled.section`
-    // grid-column: 1 / -1;
     grid-area: profileimg;
 
     img {
@@ -34,42 +30,40 @@ const ProfileImg = styled.section`
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 8 / -1;
+       
     }
 
     @media (min-width: 1024px) {
-        grid-column: 8 / -1;
+       
     }
 `;
 
 const BlogsIntro = styled.section`
-    grid-column: 1 / 12;
-    grid-row: 3 / 3;
+    grid-area: blogintro;
     background-image: url("/img/bg.svg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: left center;
+    padding: 0 2rem;
 
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 7 / 12;
+    @media (min-width: 768px) {
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 7 / 12;
+        
     }
 `;
 
 const BlogList = styled.section`
-    grid-column: 1 / 12;
-    grid-row: 4 / 4;
+    grid-area: bloglist;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 1 / 7;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 1 / 7;
+        
     }
 `;
 
@@ -86,92 +80,99 @@ const BlogItem = styled.div`
             grid-column: 1 / 2;
             grid-row: 1;
         }
+
+        @media (max-width: 768px) {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .item-content {
+        padding: 0 1.5rem;
+
+        @media (min-width: 768px) {
+            padding: 1.5rem;
+        }
     }
 `;
 
 const ErvaringenIntro = styled.section`
-    grid-column: 1 / 12;
+    grid-area: ervaringenintro;
     padding: 2rem;
     background-color: #CCE5CC;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 1 / 7;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 1 / 7;
+        
     }
 `;
 
 const Ervaringen = styled.section`
-    grid-column: 1 / 12;
-    padding: 2rem 3rem;
+    grid-area: ervaringen;
+    padding: 2rem;
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 7 / 12;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 7 / 12;
+        
     }
 `;
 
 const LocatieLeidschMap = styled.section`
-    grid-column: 1 / -1;
+    grid-area: locatieleidschmap;
     background-image: url("/img/dietist-locatie-leidschendam-voorburg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
  
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 7 / -1;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 7 / -1;
+        
     }
 `;
 
 const LocatieLeidsch = styled.section`
-    grid-column: 1 / -1;
-    padding: 2rem;
+    grid-area: locatieleidsch;
+    padding: 1rem 1.5rem 2rem;
 
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 1 / 7;
-    }
-
-    @media (min-width: 1024px) {
-        grid-column: 1 / 7;
+    @media (min-width: 768px) {
+        padding: 2rem;
     }
 `;
 
 const LocatieDordtMap = styled.section`
-    grid-column: 1 / -1;
+    grid-area: locatiedordtmap;
     background-image: url("/img/dietist-locatie-dordrecht.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
  
     @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 1 / 7;
+        
     }
 
     @media (min-width: 1024px) {
-        grid-column: 1 / 7;
+        
     }
 `;
 
 const LocatieDordt = styled.section`
-    grid-column: 1 / -1;
-    padding: 2rem;
+    grid-area: locatiedordt;
+    padding: 1rem 1.5rem 2rem;
     background-color: #81B3A5;
     color: white;
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        grid-column: 7 / -1;
-    }
-
-    @media (min-width: 1024px) {
-        grid-column: 7 / -1;
+    @media (min-width: 768px) {
+        padding: 2rem;
     }
 `;
 
@@ -218,7 +219,7 @@ export default class IndexPage extends React.Component {
                                 <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
                             </ImgWrap>
 
-                            <div className="item-content" style={{padding: '1.5rem'}}>
+                            <div className="item-content">
                                 <Link to={post.fields.slug}>
 
                                     <h3>{post.frontmatter.title}</h3>
@@ -241,7 +242,7 @@ export default class IndexPage extends React.Component {
 
                 </BlogList>
 
-                    <BlogsIntro>
+                <BlogsIntro>
 
                     <h2 className="title section-title">Blogs &amp; recepten</h2>
 
@@ -344,8 +345,6 @@ export default class IndexPage extends React.Component {
 
 
                 <LocatieLeidsch>
-                    <h2 className="title">Diëtist Eline Zuiderwijk</h2>
-                    
                     <h3 className="title">locatie Voorburg / Leidschendam:</h3>
                     <p>
                     Overgoo 1

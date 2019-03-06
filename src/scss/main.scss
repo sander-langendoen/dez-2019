@@ -4,9 +4,18 @@
 //  Fonts
 @import     'typography/typography';
 
+// Global
+@import     'Global/visibility';
+
+// Elements
+@import     'Elements/body';
+
 // Templates - Layouts
 @import     'layouts/homepage',
-            'layouts/nav';
+            'layouts/site-wrapper',
+            'layouts/header',
+            'layouts/nav',
+            'layouts/main';
 
 // layouts
 // @import     'layout/content',

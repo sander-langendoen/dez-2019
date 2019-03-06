@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from './Header'
-import Navbar from './Header/Navbar'
+// import Navbar from './Header/Navbar'
 import Footer from './Footer'
 
 import '../css/main.css'
@@ -25,7 +25,7 @@ const TemplateWrapper = ({ children }) => (
         }
     `}
     render={data => (
-      <div>
+      <div className="site-wrapper">
         <Helmet>
           <html lang="nl" />
           <title>{data.site.siteMetadata.title}</title>
@@ -45,7 +45,6 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         
         <Header />
-        <Navbar/>
         
 		<main>{children}</main>
 

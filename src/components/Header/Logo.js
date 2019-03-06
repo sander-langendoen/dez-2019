@@ -12,7 +12,7 @@ const logoMaxWidth = "460px"
 const HeaderLogo = styled.div`
 	max-width: ${props => props.maxWidth || "300px"}
 	width: 100%
-	grid-column: 2 / 4
+	grid-area: headerlogo;
 `;
 
 

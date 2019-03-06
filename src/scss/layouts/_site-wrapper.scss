@@ -1,0 +1,16 @@
+.site-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+
+    // @media (min-width: 768px) {
+    //     grid-template-areas: 
+    //         "header nav"
+    //         "main"
+    //         "footer"
+    //     ;
+    // }
+}

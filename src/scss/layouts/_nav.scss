@@ -1,16 +1,36 @@
+nav {
+    ul {
+        top: 0;
+        margin-top: 0;
+    }
+}
+
 nav button {
     position: absolute;
     right: 15px;
     top: 25px;
 
-    &.is-inactive + ul {
-        margin-left: -100%;
-        margin-left: -100vw;
-        transition: margin 0.5s ease;
-    }
+    @media (max-width: 767px) {
+        &.is-inactive + ul {
+            margin-left: -100%;
+            margin-left: -100vw;
+            transition: margin 0.5s ease;
+        }
 
-    &.is-active + ul {
-        margin-left: 0;
-        transition: margin 0.5s ease;
+        &.is-active + ul {
+            margin-left: 0;
+            transition: margin 0.5s ease;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        ul {
+            li {
+                display: inline-block;
+            }
+        }
     }
 }

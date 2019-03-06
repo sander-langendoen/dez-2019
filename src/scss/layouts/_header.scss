@@ -1,0 +1,15 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        "headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo headerlogo"
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+    ;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        grid-template-areas: 
+            "headerlogo nav nav nav nav nav nav nav nav nav nav nav nav "
+        ;
+    }
+}

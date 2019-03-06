@@ -1,13 +1,17 @@
 import React from 'react'
 
 import Logo from '../components/Header/Logo'
+import Navbar from '../components/Header/Navbar'
 
 import styled from 'styled-components'
 
 
 const HeaderWrap = styled.header`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+	grid-area: header;
+
+	a {
+		text-decoration: none;
+	}
 `;
 
 const Header = class extends React.Component {
@@ -19,6 +23,7 @@ const Header = class extends React.Component {
 			<HeaderWrap>
 
 				<Logo />
+				<Navbar />
 
 			</HeaderWrap>
 		)
